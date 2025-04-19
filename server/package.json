@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Siva Lalith",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
