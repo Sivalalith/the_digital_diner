@@ -1,7 +1,13 @@
+import Header from "./components/Header";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
-      <p className="text-center text-3xl text-blue-500">The Digital Diner</p>
+      <Header />
+      <Body />
+      <Footer />
     </>
   );
 }
