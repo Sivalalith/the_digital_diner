@@ -8,6 +8,13 @@ const Searchbar = ({ setSearchQuery }) => {
     setSearchQuery(input);
     // filterMenuData() to be added here
   };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      setSearchQuery(input);
+    }
+  };
+
   return (
     <div className="py-4 my-4">
       <input
@@ -15,6 +22,9 @@ const Searchbar = ({ setSearchQuery }) => {
         value={input}
         onChange={(e) => {
           setInput(e.target.value);
+        }}
+        onKeyDown={(e) => {
+          handleKeyDown(e);
         }}
         className="px-4 mx-4 py-2 my-2 border-1 rounded-sm"
       ></input>

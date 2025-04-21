@@ -8,10 +8,10 @@ menuRouter.get("/", async (req, res) => {
     const menu = await Menu.find({});
     res.json({
       success: true,
-      data: menu,
+      menu: menu,
     });
   } catch (err) {
-    console.error("Error occurred while fetching menu data");
+    console.error("Error occurred while fetching menu data from the database.");
   }
 });
 
